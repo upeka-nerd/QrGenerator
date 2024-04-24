@@ -16,6 +16,21 @@ public class StudentService {
 
         return studentRepository.findAll();
     }
+    public  Student addStudent(Student student){
+
+        return studentRepository.save(student);
+    }
+
+    public Student findById(long id){
+
+
+        return studentRepository.findById(id).
+                orElseThrow(()->new RuntimeException("student not found!"));
+
+
+
+    }
+
 
 
 
