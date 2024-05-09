@@ -25,7 +25,7 @@ public class QrCodeGenerator {
               BarcodeFormat.QR_CODE,400,400);
 
       Path path = FileSystems.getDefault().getPath(QrCodeName);
-      MatrixToImageWriter.writeToPath(bitMatrix,"PNG",path);
+      MatrixToImageWriter.writeToPath(bitMatrix,"JPEG",path);
    }
 
 
